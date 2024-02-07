@@ -1,0 +1,447 @@
+@media screen and (max-width: 1200px){
+	.cards{
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 850px){
+	@media (max-width: 1000px) {
+		.header__wrap .menu {
+		  display: none;
+		}
+	  
+		.hamb {
+		  display: flex;
+		  align-items: center;
+		}
+	  
+		.hamb__field {
+		  padding: 10px 20px;
+		  cursor: pointer;
+		}
+	  
+		.bar {
+		  display: block;
+		  width: 30px;
+		  height: 3px;
+		  margin: 6px auto;
+		  background-color: #fff;
+		  transition: 0.2s;
+		}
+	  
+		.popup {
+		  position: fixed;
+		  top: 75px;
+		  left: -100%;
+		  width: 100%;
+		  height: 100%;
+		  background-color: #fff;
+		  z-index: 100;
+		  display: flex;
+		  transition: 0.3s;
+		}
+	  
+		.popup.open {
+		  left: 0;
+		}
+	  
+		.popup .menu {
+		  width: 100%;
+		  height: 100%;
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		  justify-content: start;
+		  padding: 50px 0;
+		  overflow: auto;
+		}
+	  
+		.popup .menu > li {
+		  width: 100%;
+		}
+	  
+		.popup .menu > li > a {
+		  width: 100%;
+		  display: flex;
+		  justify-content: center;
+		  padding: 20px 0;
+		  font-size: 20px;
+		  font-weight: bold;
+		  color: #3f3f3f;
+		}
+	  
+		.popup .menu > li > a:hover {
+		  background-color: rgba(122, 82, 179, 0.1);
+		}
+	  
+		.hamb__field.active .bar:nth-child(2) {
+		  opacity: 0;
+		}
+	  
+		.hamb__field.active .bar:nth-child(1) {
+		  transform: translateY(8px) rotate(45deg);
+		}
+	  
+		.hamb__field.active .bar:nth-child(3) {
+		  transform: translateY(-8px) rotate(-45deg);
+		}
+	  
+		body.noscroll {
+		  overflow: hidden;
+		}
+	  }
+	.help_tit{
+		font-size: 40px;
+		margin-top: -20px;
+	}
+	.help__left{
+		margin-top: -100px;
+		margin-right: 50px;
+	}
+	.h_right{
+		flex-direction: column-reverse;
+	}
+	.btn{
+		font-size: 12px;
+		width: 100px;
+		margin-top: 30px;
+	}
+	.btn3{
+		width: 140px;
+		height: 51px;
+	}
+	.about_video{
+		margin-left: 0;
+	}
+	.help_txt{
+		font-size: 18px;
+	}
+	.help__right{
+		margin-top: 40px;
+	}
+	.big{
+		justify-content: center;
+	}
+	.counter{
+		font-size: 50px;
+	}
+	.card_txt{
+		font-size: 50px;
+	}
+	.s_tit{
+		font-size: 34px;
+	}
+	/* .flex{
+		justify-content: center;
+	} */
+	.humans{
+		height: 416px;
+	}
+	
+	.s_left{
+		margin-bottom: 45px;
+	}
+	.support .btns{
+		margin-right: 100px;
+	}
+	.btns{
+		margin-left: 0;
+	}
+	.c_tit{
+		font-size: 35px;
+	}
+	.comm .btn1{
+		display: none;
+	}
+	.head_right{
+		display: none;
+	}
+	.comm{
+		margin-top: 450px;
+	}
+	.y_tit{
+		font-size: 34px;
+		margin-top: 50px;
+		margin-left: 60px;
+	}
+	.over_text{
+
+		font-size: 25px;
+    	line-height: 40px;
+		margin-left: 0;
+	}
+	.btn1{
+		width: 150px;
+		height: 51px;
+	}
+	.btn2{
+		width: 160px;
+		height: 51px;
+	}
+	.txt_white{
+		font-size: 15px;
+	}
+	.white{
+		width: 400px;
+	}
+	.see_tit{
+		font-size: 32px;
+	}
+	.r_tit{
+		font-size: 32px;
+	}
+	.read_img{
+		display: block;
+	}
+	.img_read1{
+		margin-bottom: 250px;
+	}
+	.footer_big{
+		display: block;
+	}
+	.f_right .btns{
+		margin-left: 50px;
+	}
+	.f_left{
+		margin-left: 140px;
+	}
+	.big_butt{
+		display: block;
+	}
+	.imgs{
+		width: 280px;
+	}
+	.f_center{
+		margin-left: 150px;
+		margin-top: -100px;
+	}
+	.hamburger-menu{
+		display: none; 
+	}
+	.imgi{
+		display: none;
+	}
+	.but_text{
+		font-size: 15px;
+	}
+	.but_txt{
+		font-size: 15px;
+	}
+	.footer_buttom{
+		margin-top: 500px;
+	}
+	.f_right{
+		margin-top: -100px;
+	}
+	.butt_left{
+		margin-bottom: 40px;
+	}
+	.right_tit{
+		font-size: 20px;
+	}
+	.f_right .btn1{
+		width: 240px;
+		height: 61px;
+	}
+	.f_right .btn2{
+		width: 240px;
+		height: 61px;
+	}
+	.f_orange{
+		width: 340px;
+	}
+	hr{
+		display: none;
+	}
+	.o_t{
+		display: block;
+		padding-top: 130px;
+	}
+	.o_text{
+		margin-bottom: 40px;
+	}
+	.about__play{
+		width: 100px;
+	}
+	.white{
+		display: none;
+	}
+}
+@media screen and (max-width: 550px){
+	.general{
+		margin-top: -50px;
+		gap: 5px;
+		display: block;
+		margin-left: 30%; 
+	}
+	.card_tit{
+		margin-right: 300px;
+		font-size: 15px;
+	}
+	.over_text{
+		font-size: 20px;
+	}
+	.over_tit{
+		font-size: 15px;
+	}
+	.counter{
+		font-size: 40px;
+	}
+	.see_right{
+		margin-top: 0;
+	}
+	.see_tit{
+		font-size: 28px;
+		line-height: 35px;
+	}
+	.sr_txt{
+		font-size: 15px;
+		max-width: 350px;
+	}
+	.over{
+		height: 800px;
+	}
+	.o_tit{
+		font-size: 18px;
+	}
+	.o_txt{
+		font-size: 14px;
+	}
+	.s_text{
+		margin-right: 100px;
+	}
+	.list p{
+		font-size: 15px;
+	}
+	.over_text{
+		margin-left: 0;
+	}
+	.img3{
+		margin-right: 100px;
+	}
+	.c_img{
+		display: none;
+	}
+	.cm_tit{
+		font-size: 18px;
+		margin-top: 90px;
+	}
+	.cm_txt{
+		font-size: 12px; 
+		margin-left: 0;
+	}
+	.card_txt{
+		font-size: 40px;
+	}
+	.help_tit{
+		font-size: 35px;
+		margin-top: -20px;
+	}
+	.help__left{
+		margin-top: -100px;
+		margin-right: 50px;
+	}
+	.orange{
+		width: 100px;
+	}
+	.s_orange{
+		font-size: 15px;
+	}
+	.s_tit{
+		font-size: 27px;
+		line-height: 38.002px
+	}
+	.s_txt{
+		font-size: 15px;
+	}
+	.btn1{
+		height: 41px;
+		width: 130px;
+	}
+	.look img{
+		margin-left: 0;
+		width: 280px;
+		height: 320px;
+	}
+	.card1{
+		/* max-width: 388px; */
+		width: 250px;
+		height: 290px;
+	}
+	.btn2{
+		height: 41px;
+		width: 140px;
+	}
+	.btn3{
+		width: 120px;
+		height: 41px;
+	}
+	.b_look{
+		display: block;
+	}
+	.counter_look{
+		font-size: 32px;
+	}
+	.card_txt_look{
+		font-size: 25px;
+	}
+	.look .btn1{
+		margin-top: -50px;
+		margin-bottom: 40px;
+	}
+	.c_tit{
+		font-size: 25px;
+	}
+	.card:nth-child(2){
+		margin-left: 0;
+	}
+	.card:nth-child(4){
+		margin-left: 0;
+	}
+	.about_video{
+		margin-left: 0;
+	}
+	.over_buttom{
+		height: 500px;
+	}
+	.y_tit{
+		font-size: 25px;
+		line-height: 38.002px;
+		max-width: 350px;
+		margin-bottom: 25px;
+		margin-top: 100px;
+	}
+	.wh_btn{
+		font-size: 15px;
+	}
+
+	.white1{
+		width: 300px;
+		height: 250px;
+	}
+	.white_tit{
+		font-size: 18px;
+		line-height: 24.008px
+	}
+	.f_left{
+		margin-left: 30px;
+	}
+	.f_center{
+		margin-left: 50px;
+	}
+	.f_right{
+		margin-left: 0;
+	}
+	.but_text{
+		font-size: 12px;
+	}
+	.but_txt a{
+		font-size: 12px;
+	}
+	.but_right{
+		margin-left: 0;
+		flex-direction: row-reverse;
+	}
+	.footer_icons{
+		display: none;
+	}
+}
