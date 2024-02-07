@@ -285,6 +285,9 @@ section {
 	line-height: 65px;
 	letter-spacing: 0em;
 	color: rgba(33, 40, 6, 1);
-
-
+}
+.opa{
+	display: flex;
+	justify-content: center;
+	
 }
