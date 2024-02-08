@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twiqz</title>
     <link type="image/x-icon" href="./img/favicon/favq.svg" rel="shortcut icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 
@@ -13,87 +18,134 @@
 </head>
 
 <body>
-    <nav class="header">
-        <div class="container">
-            <div class="header__wrap">
-                <div class="hamb">
-                    <div class="hamb__field" id="hamb">
-                        <span class="bar"></span> <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </div>
-                <a href="#" class="logo" id="logo"><img src="./img/favicon/twidlogo.svg" alt=""></a>
-                <ul class="menu" id="menu">
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Sustainability</a></li>
 
-                </ul>
-                <div class="head_right flex">
-                    <div class="search_img">
-                        <img src="./img/favicon/search.svg" alt="">
-                    </div>
-                    <div class="bag">
-                        <img src="./img/favicon/bag.svg" alt="">
-                        <a href="#" class="tb">O</a>
+    <section class="best">
+        <div class="container">
+
+            <nav class="header">
+                <div class="container">
+                    <div class="header__wrap">
+                        <div class="hamb">
+                            <div class="hamb__field" id="hamb">
+                                <span class="bar"></span> <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </div>
+                        <a href="#" class="logo" id="logo"><img src="./img/favicon/twidlogo.svg" alt=""></a>
+                        <ul class="menu" id="menu">
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Sustainability</a></li>
+
+                        </ul>
+                        <div class="head_right flex">
+                            <div class="search_img">
+                                <img src="./img/favicon/search.svg" alt="">
+                            </div>
+                            <div class="bag">
+                                <img src="./img/favicon/bag.svg" alt="">
+                                <a href="#" class="tb">O</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </nav>
+            <div class="popup" id="popup"></div>
+            <!-- Продолжение вашего кода .. -->
+
+
+
+            <div class="about_video">
+                <button class="about__play"><img src="./img/plays.svg" alt=""></button>
             </div>
-        </div>
-    </nav>
-    <div class="popup" id="popup"></div>
-    <!-- Продолжение вашего кода .. -->
 
 
 
-    <div class="about_video">
-        <button class="about__play"><img src="./img/plays.svg" alt=""></button>
-    </div>
-    <!-- <section class="best">
-        <div class="container">
-            <div class="best_text">
-                <span class="little">the eco-friendly way to</span>
-                <span class="big">Give the best wishes to your loved ones.</span>
+
+            <div class="home-hero__content">
+                <div class="hero__subheading">
+                    <div class="hero__subheading-text">the eco-friendly way to</div>
+                </div>
+                <div class="hero__heading">
+                    <h1 class="hero__heading-text">Give the best wishes to your loved ones.
+                    </h1>
+                </div>
+                <button type="button" class="btn">
+                    <span class="btn_txt">Shop Now</span>
+                    <div class="btn_ic">
+                        <img src="./img/favicon/jaa.svg" alt="">
+                    </div>
+                </button>
+
             </div>
         </div>
     </section>
-    <div class="custom">
-        <div class="container">
-            <div class="com">
-                <div class="com1">Customer Feedback</div>
-                <div class="stars">
-                    <div class="star">
-                        <img src="./img/favicon/julduz.svg" alt="">
-                    </div>
-                    <div class="star">
-                        <img src="./img/favicon/julduz.svg" alt="">
-                    </div>
-                    <div class="star">
-                        <img src="./img/favicon/julduz.svg" alt="">
-                    </div>
-                    <div class="star">
-                        <img src="./img/favicon/julduz.svg" alt="">
-                    </div>
-                    <div class="star">
-                        <img src="./img/favicon/julduz.svg" alt="">
-                    </div>
 
+    <section class="smallest">
+        <div class="container">
+            <div class="small">
+                <div class="small_tit">
+                    Our smallest choices have the potential for the biggest impact. Let’s make good ones together.
                 </div>
-                <div class="com1">based on 1000+ Etsy Reviews</div>
+
+            </div>
+            <div class="btn_area">
+                <button type="button" class="btm">
+                    <span class="btm_txt">Sustainability</span>
+                    <div class="btm_ic">
+                        <img src="./img/favicon/karajaa.svg" alt="">
+                    </div>
+                </button>
             </div>
         </div>
-    </div>
-    <section class="our">
+    </section>
+    <section class="sellest">
         <div class="container">
-           <div class="opa"> <div class="our_tit">
-            Our smallest choices have the potential for the biggest impact. Let’s make good ones together.
-        </div></div>
+            <div class="sell">
+                <div class="sell_right">
+                    <div class="sell_text">
+                        <div class="sell_tit">Our Best Sellers</div>
+                        <div class="sell_txt">Deliver a smile to yourself or someone special with one of our sustainable
+                            favorites.</div>
+                        <button type="button" class="btn">
+                            <span class="btn_txt">Shop all products</span>
+                            <div class="btn_ic">
+                                <img src="./img/favicon/jaa.svg" alt="">
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="sell_right">
+                    <div class="cards flex">
+                        <div class="card">
+                            <div class="card_img">
+                                <img src="./img/favicon/cardbir.jpg" alt="">
+                            </div>
+                            <div class="card_txt">Assorted Card Set</div>
+                            <div class="card_tit">North American Birds</div>
+                            <div class="price">$ 14.00</div>
+                        </div>
+                        <div class="card">
+                            <div class="card_img">
+                                <img src="./img/favicon/cardbir.jpg" alt="">
+                            </div>
+                            <div class="card_txt">Assorted Card Set</div>
+                            <div class="card_tit">North American Birds</div>
+                            <div class="price">$ 14.00</div>
+                        </div>
+                        <div class="card">
+                            <div class="card_img">
+                                <img src="./img/favicon/cardbir.jpg" alt="">
+                            </div>
+                            <div class="card_txt">Assorted Card Set</div>
+                            <div class="card_tit">North American Birds</div>
+                            <div class="price">$ 14.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section> -->
-
-
-    
-
+    </section>
     <script src="js/core.js"></script>
 
 
