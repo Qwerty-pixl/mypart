@@ -420,6 +420,25 @@ section {
 	padding: 15px 38px 21px 18px;
 
 }
-.head_right{
+
+.head_right {
 	margin-right: 40px;
+}
+
+.feet_txt {
+	color: rgba(33, 40, 6, 0.8);
+	font-family: Roboto;
+	font-size: 19px;
+	font-weight: 400;
+	line-height: 34.56px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+.stars{
+	display: flex;
+}
+.feedback{
+	background: rgb(245, 238, 230);
+	display: flex;
+	padding: 22px 94px;
 }
