@@ -509,18 +509,20 @@ input[name="r"] {
 
 
 .usps {
+	margin-bottom: 155px;
+	justify-content: center;
     margin-top: -34px;
-    margin-bottom: 100px;
     box-shadow: 1px 1px 4px 0px rgba(232, 230, 230, 0.60);
 }
 .usps__grid {
 	gap: 16px;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 	background: rgb(245, 238, 230);
     box-shadow: rgba(208, 194, 194, 0.6) 1px 1px 4px;
     padding: 27px 93px;
+	width: 820px;
 }
 
 .stars{
