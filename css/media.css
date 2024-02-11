@@ -99,4 +99,7 @@
 		font-size: 28px;
 		line-height: 36px;
 	}
+	.sell_right{
+		flex-direction: column;
+	}
 }
