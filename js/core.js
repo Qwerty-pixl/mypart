@@ -1,75 +1,75 @@
-(function(){
+(function () {
 
-    let counter = document.querySelectorAll('.counter');
-    let limit = 0; // Переменная, чтобы останавливать функцию, когда всё запустится.
-    window.addEventListener('scroll', function(){  
-      if( limit == counter.length ){ return; }
-      
-      for(let i = 0; i < counter.length; i++){
-        let pos = counter[i].getBoundingClientRect().top; //Позиция блока, считая сверху окна
-        let win = window.innerHeight - 40; // На 40 пикселей меньше, чем высота окна
-        if( pos < win && counter[i].dataset.stop === "0" ){
-          counter[i].dataset.stop = 1; // Останавливаем перезапуск счета в этом блоке
-          let x = 0;
-          limit++; // Счетчик будет запущен, увеличиваем переменную на 1
-          let int = setInterval(function(){
-            // Раз в 60 миллисекунд будет прибавляться 50-я часть нужного числа
-            x = x + Math.ceil( counter[i].dataset.to / 50 ); 
-            counter[i].innerText = x;
-            if( x > counter[i].dataset.to ){
-              //Как только досчитали - стираем интервал.
-              counter[i].innerText = counter[i].dataset.to;
-              clearInterval(int);
-            }
-          }, 60);
-        }
-      }
-    });
-    
-    })();
+  let counter = document.querySelectorAll('.counter');
+  let limit = 0; // Переменная, чтобы останавливать функцию, когда всё запустится.
+  window.addEventListener('scroll', function () {
+    if (limit == counter.length) { return; }
 
-
-
-    (function(){
-
-      let counter = document.querySelectorAll('.counter_look');
-      let limit = 0; // Переменная, чтобы останавливать функцию, когда всё запустится.
-      window.addEventListener('scroll', function(){  
-        if( limit == counter.length ){ return; }
-        
-        for(let i = 0; i < counter.length; i++){
-          let pos = counter[i].getBoundingClientRect().top; //Позиция блока, считая сверху окна
-          let win = window.innerHeight - 40; // На 40 пикселей меньше, чем высота окна
-          if( pos < win && counter[i].dataset.stop === "0" ){
-            counter[i].dataset.stop = 1; // Останавливаем перезапуск счета в этом блоке
-            let x = 0;
-            limit++; // Счетчик будет запущен, увеличиваем переменную на 1
-            let int = setInterval(function(){
-              // Раз в 60 миллисекунд будет прибавляться 50-я часть нужного числа
-              x = x + Math.ceil( counter[i].dataset.to / 50 ); 
-              counter[i].innerText = x;
-              if( x > counter[i].dataset.to ){
-                //Как только досчитали - стираем интервал.
-                counter[i].innerText = counter[i].dataset.to;
-                clearInterval(int);
-              }
-            }, 60);
+    for (let i = 0; i < counter.length; i++) {
+      let pos = counter[i].getBoundingClientRect().top; //Позиция блока, считая сверху окна
+      let win = window.innerHeight - 40; // На 40 пикселей меньше, чем высота окна
+      if (pos < win && counter[i].dataset.stop === "0") {
+        counter[i].dataset.stop = 1; // Останавливаем перезапуск счета в этом блоке
+        let x = 0;
+        limit++; // Счетчик будет запущен, увеличиваем переменную на 1
+        let int = setInterval(function () {
+          // Раз в 60 миллисекунд будет прибавляться 50-я часть нужного числа
+          x = x + Math.ceil(counter[i].dataset.to / 50);
+          counter[i].innerText = x;
+          if (x > counter[i].dataset.to) {
+            //Как только досчитали - стираем интервал.
+            counter[i].innerText = counter[i].dataset.to;
+            clearInterval(int);
           }
-        }
-      });
-      
-      })();
+        }, 60);
+      }
+    }
+  });
+
+})();
 
 
 
- const play = document.querySelector('.about__play')     
- const video = document.querySelector('.about_video video')
+(function () {
 
- play.addEventListener('click', () => {
+  let counter = document.querySelectorAll('.counter_look');
+  let limit = 0; // Переменная, чтобы останавливать функцию, когда всё запустится.
+  window.addEventListener('scroll', function () {
+    if (limit == counter.length) { return; }
+
+    for (let i = 0; i < counter.length; i++) {
+      let pos = counter[i].getBoundingClientRect().top; //Позиция блока, считая сверху окна
+      let win = window.innerHeight - 40; // На 40 пикселей меньше, чем высота окна
+      if (pos < win && counter[i].dataset.stop === "0") {
+        counter[i].dataset.stop = 1; // Останавливаем перезапуск счета в этом блоке
+        let x = 0;
+        limit++; // Счетчик будет запущен, увеличиваем переменную на 1
+        let int = setInterval(function () {
+          // Раз в 60 миллисекунд будет прибавляться 50-я часть нужного числа
+          x = x + Math.ceil(counter[i].dataset.to / 50);
+          counter[i].innerText = x;
+          if (x > counter[i].dataset.to) {
+            //Как только досчитали - стираем интервал.
+            counter[i].innerText = counter[i].dataset.to;
+            clearInterval(int);
+          }
+        }, 60);
+      }
+    }
+  });
+
+})();
+
+
+
+const play = document.querySelector('.about__play')
+const video = document.querySelector('.about_video video')
+
+play.addEventListener('click', () => {
   video.play();
-  video.setAttribute('controls','controls')
+  video.setAttribute('controls', 'controls')
   play.classList.add('about__play--hidden');
- })
+})
 
 
 const hamb = document.querySelector("#hamb");
@@ -113,3 +113,25 @@ function closeOnClick() {
 }
 
 
+var moveSlides = function (direction) {
+  var distance;
+
+  carouselInner.className += ' animate';
+
+  // Move the carouselInner in the right direction
+  if (direction === 'prev') {
+    distance = slideWidth + margin;
+
+    reorderSlides(direction);
+  } else if (direction === 'next') {
+    distance = -slideWidth + margin;
+  } else {
+    distance = 0;
+  }
+
+  translate(distance);
+
+
+  // Clear the timer, reset the positions etc.
+  timeouts = [];
+};
