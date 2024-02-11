@@ -540,3 +540,6 @@ input[name="r"] {
     grid-template-rows: auto auto;
     grid-auto-columns: 1fr;
 }
+.stars{
+	display: flex;
+}
