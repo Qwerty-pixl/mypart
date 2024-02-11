@@ -515,3 +515,28 @@ input[name="r"] {
 	justify-content: center;
 	margin-left: 216px;
 } */
+
+
+
+
+.usps {
+    margin-top: -34px;
+    margin-bottom: 100px;
+    box-shadow: 1px 1px 4px 0px rgba(232, 230, 230, 0.60);
+}
+.usps__grid {
+    width: 100%;
+	background: rgb(245, 238, 230);
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: rgba(208, 194, 194, 0.6) 1px 1px 4px;
+    border-radius: 6px;
+    padding: 20px 30px;
+}
+.w-layout-grid {
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-auto-columns: 1fr;
+}
