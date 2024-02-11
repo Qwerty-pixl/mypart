@@ -504,12 +504,14 @@ input[name="r"] {
 #r4:checked~.s1 {
 	margin-left: -75%;
 }
-
+/* .custom{
+	margin-top: -34px;
+}
 .cust {
 	background: rgb(245, 238, 230);
 	width: 1008px;
 	height: 77px;
 	display: flex;
 	justify-content: center;
-	margin-top: -34px;
-}
+	margin-left: 216px;
+} */
