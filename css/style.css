@@ -531,9 +531,7 @@ input[name="r"] {
 	align-items: center;
 	background: rgb(245, 238, 230);
     box-shadow: rgba(208, 194, 194, 0.6) 1px 1px 4px;
-    border-radius: 6px;
     padding: 27px 93px;
-	width: 1008px;
 }
 
 .stars{
