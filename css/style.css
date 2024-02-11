@@ -528,11 +528,12 @@ input[name="r"] {
 	gap: 16px;
 	display: flex;
 	justify-content: center;
-    width: 100%;
+	align-items: center;
 	background: rgb(245, 238, 230);
     box-shadow: rgba(208, 194, 194, 0.6) 1px 1px 4px;
     border-radius: 6px;
-    padding: 20px 30px;
+    padding: 27px 93px;
+	width: 1008px;
 }
 
 .stars{
