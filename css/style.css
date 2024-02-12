@@ -345,7 +345,9 @@ section {
 	text-align: left;
 
 }
-
+.usps{
+	
+}
 .sell {
 	display: flex;
 }
@@ -426,7 +428,9 @@ section {
 }
 
 
-
+.obertka{
+	margin-left: 216px;
+}
 .usps {
 	margin-bottom: -75px;
 	justify-content: center;
