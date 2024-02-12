@@ -306,12 +306,16 @@ section {
 	display: flex;
 	justify-content: center;
 }
-
+.qwert{
+	width: 229px;
+}
 .sell_left {
 	width: 25%;
 }
 .sell_text{
 	width: 100%;
+	margin-left: 35px;
+	margin-top: 20px;
 }
 .sell_tit {
 	color: rgb(33, 40, 6);
@@ -321,6 +325,7 @@ section {
 	line-height: 51.84px;
 	letter-spacing: 0%;
 	text-align: left;
+	margin-bottom: 20px;
 }
 
 .sell_txt {
