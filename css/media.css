@@ -4,8 +4,8 @@
 	}
 }
 
-@media screen and (max-width: 850px) {
-	@media (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
+	@media (max-width: 1200px) {
 		.header__wrap .menu {
 			display: none;
 		}
@@ -89,6 +89,10 @@
 		body.noscroll {
 			overflow: hidden;
 		}
+		.usps__grid {
+			flex-direction: column;
+			width: 100%;
+		}
 	}
 }
 
@@ -146,10 +150,7 @@
 		justify-content: center;
 	}
 
-	.usps__grid {
-		flex-direction: column;
-		width: 100%;
-	}
+	
 
 	.obertka {
 		margin-left: 0;
