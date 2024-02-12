@@ -140,6 +140,13 @@
 		display: flex;
 	  justify-content: center;
 	}
+	.usps__grid{
+		flex-direction: column;
+		width: 100%;
+	}
+	.obertka{
+		margin-left: 0;
+	}
   }
 
 
