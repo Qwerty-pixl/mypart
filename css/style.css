@@ -465,6 +465,4 @@ section {
 	justify-content: flex-end;
 }
 
-.next {
-	transform: scaleX(-1);
-}
+
