@@ -99,7 +99,8 @@
 		font-size: 28px;
 		line-height: 36px;
 	}
-	.sell_right{
+
+	.sell_right {
 		flex-direction: column;
 	}
 }
@@ -107,50 +108,54 @@
 
 @media screen and (max-width: 768px) {
 	.products {
-	  flex-direction: column;
+		flex-direction: column;
 	}
-  
+
 	.product {
-	  flex-basis: 100%;
-	  margin-bottom: 1rem;
+		flex-basis: 100%;
+		margin-bottom: 1rem;
 	}
-  }
+}
 
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.cards {
-	  flex-direction: column;
+		flex-direction: column;
+		justify-content: center;
 	}
-  
+
 	.card {
-	  flex-basis: 100%;
-	  margin-bottom: 1rem;
+		flex-basis: 100%;
+		margin-bottom: 1rem;
 	}
-  }
-  @media screen and (max-width: 679px) {
+}
+
+@media screen and (max-width: 679px) {
 	.sell {
-	  flex-direction: column;
+		flex-direction: column;
 	}
-  .btn{
-	display: flex;
-	justify-content: center;
-  }
+
+	.btn {
+		display: flex;
+		justify-content: center;
+	}
+
 	.strelki {
 		margin-top: 50px;
 		display: flex;
-	  justify-content: center;
+		justify-content: center;
 	}
-	.usps__grid{
+
+	.usps__grid {
 		flex-direction: column;
 		width: 100%;
 	}
-	.obertka{
+
+	.obertka {
 		margin-left: 0;
 	}
-	.sell_left{
+
+	.sell_left {
 		width: 100%;
 	}
-  }
-
-
-  
+}

@@ -262,8 +262,7 @@ section {
 	box-sizing: border-box;
 	border: 1px solid rgb(33, 40, 6);
 	border-radius: 40px;
-
-	width: 177px;
+	width: 201px;
 	height: 47px;
 	left: 0;
 	top: 0;
@@ -284,7 +283,8 @@ section {
 }
 
 .small {
-	margin-top: 155px;
+	margin-left: -10px;
+	margin-top: 145px;
 	display: flex;
 	justify-content: center;
 	margin-bottom: 63px;
@@ -445,7 +445,7 @@ section {
 	background: rgb(245, 238, 230);
 	box-shadow: rgba(208, 194, 194, 0.6) 1px 1px 4px;
 	padding: 27px 93px;
-	width: 820px;
+	width: 1008px;
 }
 
 .stars {
