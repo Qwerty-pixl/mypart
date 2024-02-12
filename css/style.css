@@ -245,7 +245,9 @@ section {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: 0.3s;
 }
+
 
 .btn_txt {
 	color: rgb(252, 248, 243);
@@ -256,6 +258,9 @@ section {
 	letter-spacing: 0%;
 	text-align: left;
 	margin-right: 20px;
+}
+.btn_txt:hover{
+	color:  rgb(33, 40, 6);
 }
 
 .btm {
