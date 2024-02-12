@@ -310,7 +310,9 @@ section {
 .sell_left {
 	width: 25%;
 }
-
+.sell_text{
+	width: 100%;
+}
 .sell_tit {
 	color: rgb(33, 40, 6);
 	font-family: Roboto;
@@ -344,9 +346,6 @@ section {
 	letter-spacing: 0%;
 	text-align: left;
 
-}
-.usps{
-	
 }
 .sell {
 	display: flex;
