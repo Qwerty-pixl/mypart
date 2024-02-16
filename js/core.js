@@ -62,76 +62,48 @@
 
 
 
-const play = document.querySelector('.about__play')
-const video = document.querySelector('.about_video video')
 
-play.addEventListener('click', () => {
-  video.play();
-  video.setAttribute('controls', 'controls')
-  play.classList.add('about__play--hidden');
-})
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+  smoothLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    const id = smoothLink.getAttribute('href');
+
+    document.querySelector(id).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
+};
+
+setTimeout(function () {
+  loader.remove();
+  section.style.display = 'flex';
+  header.style.display = 'flex';
+  footer.style.display = ' ';
+  order.style.display = 'flex';
+  about.style.display = 'flex';
+  start.style.display = 'flex';
+  advantages.style.display = 'flex';
+  partners.style.display = 'flex';
+  program.style.display = 'flex';
+  mentors.style.display = 'flex';
+  form.style.display = 'flex';
+}, 2000)
 
 
-const hamb = document.querySelector("#hamb");
-const popup = document.querySelector("#popup");
-const body = document.body;
 
-// Клонируем меню, чтобы задать свои стили для мобильной версии
-const menu = document.querySelector("#menu").cloneNode(1);
+console.log($('.btn'))
 
-// При клике на иконку hamb вызываем ф-ию hambHandler
-hamb.addEventListener("click", hambHandler);
-
-// Выполняем действия при клике ..
-function hambHandler(e) {
-  e.preventDefault();
-  // Переключаем стили элементов при клике
-  popup.classList.toggle("open");
-  hamb.classList.toggle("active");
-  body.classList.toggle("noscroll");
-  renderPopup();
-}
-
-// Здесь мы рендерим элементы в наш попап
-function renderPopup() {
-  popup.appendChild(menu);
-}
-
-// Код для закрытия меню при нажатии на ссылку
-const links = Array.from(menu.children);
-
-// Для каждого элемента меню при клике вызываем ф-ию
-links.forEach((link) => {
-  link.addEventListener("click", closeOnClick);
+// Выбираем кнопку
+const btn = document.querySelector(".btn-toggle");
+// Отслеживаем щелчок по кнопке
+btn.addEventListener("click", function () {
+  // Затем переключаем (добавляем/удаляем) класс .dark-theme для body
+  document.body.classList.toggle("dark-theme");
 });
 
-// Закрытие попапа при клике на меню
-function closeOnClick() {
-  popup.classList.remove("open");
-  hamb.classList.remove("active");
-  body.classList.remove("noscroll");
-}
 
 
-var moveSlides = function (direction) {
-  var distance;
-
-  carouselInner.className += ' animate';
-
-  // Move the carouselInner in the right direction
-  if (direction === 'prev') {
-    distance = slideWidth + margin;
-
-    reorderSlides(direction);
-  } else if (direction === 'next') {
-    distance = -slideWidth + margin;
-  } else {
-    distance = 0;
-  }
-
-  translate(distance);
 
 
-  // Clear the timer, reset the positions etc.
-  timeouts = [];
-};
