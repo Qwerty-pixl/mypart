@@ -506,10 +506,41 @@ section {
 	overflow: hidden;
 }
 
+.desc_txt {
+	color: rgb(33, 40, 6);
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14.4px;
+	letter-spacing: 0%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.desc_tit {
+	color: rgb(33, 40, 6);
+	font-family: Roboto;
+	font-size: 23px;
+	font-weight: 400;
+	line-height: 35.28px;
+	letter-spacing: 0%;
+	text-align: center;
+}
+
+.desc_price {
+	color: rgb(33, 40, 6);
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28.8px;
+	letter-spacing: 0%;
+	text-align: center;
+}
+
 .swiper {
 	width: 100%;
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 100px;
 }
 
 .swiper-slide {
@@ -871,9 +902,11 @@ img.rot {
 	display: flex;
 	gap: 15px;
 }
-.explore{
+
+.explore {
 	margin-bottom: 100px;
 }
+
 .picture_tit {
 	color: rgb(33, 40, 6);
 	font-family: Roboto;
@@ -884,9 +917,10 @@ img.rot {
 	text-align: center;
 }
 
-.picture_top{
+.picture_top {
 	padding-top: 70px;
 }
+
 .underline-one {
 	color: rgb(34, 34, 34)fff;
 	/* Цвет обычной ссылки */
@@ -1087,10 +1121,12 @@ footer {
 	letter-spacing: 0%;
 	text-align: left;
 }
-.jour{
+
+.jour {
 	margin-left: 400px;
 	margin-top: -70px;
 }
+
 .footer_bottom {
 	margin-top: 100px;
 	gap: 200px;
