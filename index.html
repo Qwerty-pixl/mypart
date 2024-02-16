@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twiqz</title>
-    <link type="image/x-icon" href="./img/favicon/favq.svg" rel="shortcut icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="shortcut icon" href="./img/favicon/favq.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="main.scss">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 
@@ -18,6 +20,7 @@
 </head>
 
 <body>
+
 
     <section class="best">
         <div class="container">
@@ -32,19 +35,20 @@
                             </div>
                         </div>
                         <a href="#" class="logo" id="logo"><img src="./img/favicon/twidlogo.svg" alt=""></a>
-                        <ul class="menu" id="menu">
-                            <li><a class="aigera" href="#">Shop</a></li>
-                            <li><a class="aigera" href="#">About</a></li>
-                            <li><a class="aigera" href="#">Sustainability</a></li>
+                        <ul class="many" id="menu">
+                            <li><a class="aigera underline-one" href="#">Shop</a></li>
+                            <li><a class="aigera underline-one" href="#">About</a></li>
+                            <li><a class="aigera underline-one" href="#">Sustainability</a></li>
 
                         </ul>
                         <div class="head_right flex">
                             <div class="search_img">
                                 <img src="./img/favicon/search.svg" alt="">
                             </div>
-                            <div class="bag">
+                            <div class="search_img">
                                 <img src="./img/favicon/bag.svg" alt="">
                                 <a href="#" class="tb">O</a>
+
                             </div>
                         </div>
                     </div>
@@ -146,14 +150,14 @@
                 </div>
                 <div class="sell_right">
                     <div class="strelki">
-                        <div class="prev">
+                        <button class="prev">
                             <img src="./img/favicon/prev.jpg" alt="">
-                        </div>
-                        <div class="next">
+                        </button>
+                        <button class="next">
                             <img src="./img/favicon/next.svg" alt="">
-                        </div>
+                        </button>
                     </div>
-                    <div class="cards flex">
+                    <!-- <div class="cards flex">
                         <div class="card">
                             <div class="card_img">
                                 <img src="./img/favicon/cardbir.jpg" alt="">
@@ -178,13 +182,493 @@
                             <div class="card_tit">New York, London, Paris</div>
                             <div class="price">$ 14.00</div>
                         </div>
+                    </div> -->
+                    <div class="main_content">
+                        <div class="container">
+                            <div class="content">
+
+                                <!-- Swiper -->
+                                <div
+                                    class="swiper mySwiper swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress">
+                                    <div class="swiper-wrapper" id="swiper-wrapper-b5a7be4f416d7014" aria-live="polite"
+                                        style="cursor: grab; transition-duration: 0ms; transform: translate3d(35px, 0px, 0px); transition-delay: 0ms;">
+                                        <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-prev"
+                                            role="group" aria-label="1 / 3"
+                                            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -100px) rotateX(0deg) rotateY(50deg) scale(1); z-index: 0;">
+                                            <a href="" class="content_btn">
+                                                <div class="content_card">
+                                                    <div class="content_img">
+                                                        <img src="./img/favicon/cardbir.jpg" alt="">
+                                                    </div>
+                                                    <div class="sec_desc content_desc">By <strong>Wahid Ari</strong> |
+                                                        03 March 2019
+                                                    </div>
+                                                    <h3 class="sec_tit com_tit">Increasing Prosperity With Positive
+                                                        Thinking</h3>
+                                                </div>
+                                            </a>
+                                            <div class="swiper-slide-shadow-left swiper-slide-shadow-coverflow"
+                                                style="opacity: 1; transition-duration: 0ms;"></div>
+                                            <div class="swiper-slide-shadow-right swiper-slide-shadow-coverflow"
+                                                style="opacity: 0; transition-duration: 0ms;"></div>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active"
+                                            role="group" aria-label="2 / 3"
+                                            style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) scale(1); z-index: 1;">
+                                            <a href="" class="content_btn">
+                                                <div class="content_card">
+                                                    <div class="content_img">
+                                                        <img src="./img/favicon/cardeki.jpg" alt="">
+                                                    </div>
+                                                    <div class="sec_desc content_desc">By <strong>Wahid Ari</strong> |
+                                                        03 March 2019
+                                                    </div>
+                                                    <h3 class="sec_tit com_tit">Success Steps For Your Personal Or
+                                                        Business</h3>
+                                                </div>
+                                            </a>
+                                            <div class="swiper-slide-shadow-left swiper-slide-shadow-coverflow"
+                                                style="opacity: 0; transition-duration: 0ms;"></div>
+                                            <div class="swiper-slide-shadow-right swiper-slide-shadow-coverflow"
+                                                style="opacity: 0; transition-duration: 0ms;"></div>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-next"
+                                            role="group" aria-label="3 / 3"
+                                            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -100px) rotateX(0deg) rotateY(-50deg) scale(1); z-index: 0;">
+                                            <a href="" class="content_btn">
+                                                <div class="content_card">
+                                                    <div class="content_img">
+                                                        <img src="./img/favicon/carduch.jpg" alt="">
+                                                    </div>
+                                                    <div class="sec_desc content_desc">By <strong>Wahid Ari</strong> |
+                                                        03 March 2019
+                                                    </div>
+                                                    <h3 class="sec_tit com_tit">Motivation Is The First Step To Success
+                                                    </h3>
+                                                </div>
+                                            </a>
+                                            <div class="swiper-slide-shadow-left swiper-slide-shadow-coverflow"
+                                                style="opacity: 0; transition-duration: 0ms;"></div>
+                                            <div class="swiper-slide-shadow-right swiper-slide-shadow-coverflow"
+                                                style="opacity: 1; transition-duration: 0ms;"></div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal">
+                                        <span class="swiper-pagination-bullet"></span><span
+                                            class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                                            aria-current="true"></span><span class="swiper-pagination-bullet"></span>
+                                    </div>
+                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                                </div>
+
+                                <!-- Swiper JS -->
+                                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+                                <!-- Initialize Swiper -->
+                                <script>
+                                    var swiper = new Swiper(".mySwiper", {
+                                        effect: "coverflow",
+                                        grabCursor: true,
+                                        centeredSlides: true,
+                                        slidesPerView: "auto",
+                                        coverflowEffect: {
+                                            rotate: 50,
+                                            stretch: 0,
+                                            depth: 100,
+                                            modifier: 1,
+                                            slideShadows: true,
+                                        },
+                                        pagination: {
+                                            el: ".swiper-pagination",
+                                        },
+                                    });
+                                </script>
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="turtlest">
+        <div class="container">
+            <div class="turtle">
+                <div class="turtle_left">
+                    <div class="turtle_img">
+                        <img src="./img/favicon/turtle.jpg" alt="">
+                    </div>
+                </div>
+                <div class="turtle_right">
+                    <div class="slider-container">
+                        <div class="menu">
+                            <label for="slide-dot-1">
+                            </label>
+                            <label for="slide-dot-2"></label>
+                            <label for="slide-dot-3"></label>
+                        </div>
+                        <input id="slide-dot-1" type="radio" name="slides" checked>
+                        <div class="slide slide-1">
+                            <div class="slide_text">
+                                <div class="stars group">
+                                    <div class="star">
+                                        <img src="./img/favicon/julduz.svg" alt="">
+                                    </div>
+                                    <div class="star">
+                                        <img src="./img/favicon/julduz.svg" alt="">
+                                    </div>
+                                    <div class="star">
+                                        <img src="./img/favicon/julduz.svg" alt="">
+                                    </div>
+                                    <div class="star">
+                                        <img src="./img/favicon/julduz.svg" alt="">
+                                    </div>
+                                    <div class="star">
+                                        <img src="./img/favicon/julduz.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="slide_tit">Beautiful cards and very high quality. They were shipped to me
+                                    very quickly and the packaging was awesome. Definitely recommend and will order
+                                    again.</div>
+                                <div class="slide_txt-lit">- Tirzah -</div>
+                            </div>
+                        </div>
+                        <input id="slide-dot-2" type="radio" name="slides">
+                        <div class="slide slide-2">
+                            <div class="slide_text">
+                                <div class="stars group">
+                                    <div class="star">
+                                        <img src="./img/favicon/julduz.svg" alt="">
+                                    </div>
+                                    <div class="star">
+                                        <img src="./img/favicon/julduz.svg" alt="">
+                                    </div>
+                                    <div class="star">
+                                        <img src="./img/favicon/julduz.svg" alt="">
+                                    </div>
+                                    <div class="star">
+                                        <img src="./img/favicon/julduz.svg" alt="">
+                                    </div>
+                                    <div class="star">
+                                        <img src="./img/favicon/julduz.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="slide_tit">Beautiful cards and very high quality. They were shipped to me
+                                    very quickly and the packaging was awesome. Definitely recommend and will order
+                                    again.</div>
+                                <div class="slide_txt-lit">- Tirzah -</div>
+                            </div>
+                        </div>
+                        <input id="slide-dot-3" type="radio" name="slides">
+                        <div class="slide slide-3">
+                            <div class="slide_text">
+                                <div class="stars group">
+                                    <div class="star">
+                                        <img src="./img/favicon/julduz.svg" alt="">
+                                    </div>
+                                    <div class="star">
+                                        <img src="./img/favicon/julduz.svg" alt="">
+                                    </div>
+                                    <div class="star">
+                                        <img src="./img/favicon/julduz.svg" alt="">
+                                    </div>
+                                    <div class="star">
+                                        <img src="./img/favicon/julduz.svg" alt="">
+                                    </div>
+                                    <div class="star">
+                                        <img src="./img/favicon/julduz.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="slide_tit">Beautiful cards and very high quality. They were shipped to me
+                                    very quickly and the packaging was awesome. Definitely recommend and will order
+                                    again.</div>
+                                <div class="slide_txt-lit">- Tirzah -</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tranc">
+        <div class="container">
+            <div class="transpar">
+                <div class="transpar_tit">Led by Transparency</div>
+                <div class="transpar_cards">
 
 
+
+
+
+
+                    <div class="box">
+                        <div class="box-inner">
+                            <div class="box-front">
+                                <div class="transpar_card">
+                                    <div class="transpar_card-img">
+                                        <img src="./img/favicon/letter.jpg" alt="">
+                                    </div>
+                                    <div class="transpar_txt">Fast shipping. Free on orders over $25.</div>
+                                </div>
+                            </div>
+                            <div class="box-back">
+                                <div class="transpar_card">
+                                    <div class="transpar_card-img">
+                                        <img src="./img/favicon/letter.jpg" alt="">
+                                    </div>
+                                    <div class="transpar_txt">Fast shipping. Free on orders over $25.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-inner">
+                            <div class="box-front">
+                                <div class="transpar_card">
+                                    <div class="transpar_card-img">
+                                        <img src="./img/favicon/earth.jpg" alt="">
+                                    </div>
+                                    <div class="transpar_txt">Sustainable process from start to finish.</div>
+                                </div>
+                            </div>
+                            <div class="box-back">
+                                <div class="transpar_card">
+                                    <div class="transpar_card-img">
+                                        <img src="./img/favicon/earth.jpg" alt="">
+                                    </div>
+                                    <div class="transpar_txt">Sustainable process from start to finish.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-inner">
+                            <div class="box-front">
+                                <div class="transpar_card">
+                                    <div class="transpar_card-img">
+                                        <img src="./img/favicon/king.jpg" alt="">
+                                    </div>
+                                    <div class="transpar_txt">Unique designs and high-quality materials.</div>
+                                </div>
+                            </div>
+                            <div class="box-back">
+                                <div class="transpar_card">
+                                    <div class="transpar_card-img">
+                                        <img src="./img/favicon/king.jpg" alt="">
+                                    </div>
+                                    <div class="transpar_txt">Unique designs and high-quality materials.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="box">
+                        <div class="box-inner">
+                            <div class="box-front">
+                                <div class="transpar_card">
+                                    <div class="transpar_card-img">
+                                        <img src="./img/favicon/sun.jpg" alt="">
+                                    </div>
+                                    <div class="transpar_txt">Partnering with small businesses in the USA.</div>
+                                </div>
+                            </div>
+                            <div class="box-back">
+                                <div class="transpar_card">
+                                    <div class="transpar_card-img">
+                                        <img src="./img/favicon/sun.jpg" alt="">
+                                    </div>
+                                    <div class="transpar_txt">Partnering with small businesses in the USA.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="transpar_area">
+                    <button type="button" class="btn transpar_btn">
+                        <span class="btn_txt">Shop Now</span>
+                        <div class="btn_ic">
+                            <img src="./img/favicon/jaa.svg" alt="">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ulti">
+        <div class="container">
+            <div class="ultimat">
+                <div class="ultimat_left">
+                    <span class="inspo">
+                        Inspiration
+                    </span>
+                    <div class="ultimat_tit">
+                        The Ultimate Guide: What to Write in a Birthday Card
+                    </div>
+                    <p class="ultimate_txt">
+                        Celebrate the life you have! Birthdays are the one time of year we get to celebrate those
+                        closest to us and we should take the opportunity to let them know just how much they are
+                        appreciated.
+                    </p>
+                    <div class="btn_around">
+                        <button type="button" class="btm">
+                            <span class="btm_txt">Sustainability</span>
+                            <div class="btm_ic">
+                                <img src="./img/favicon/karajaa.svg" alt="">
+                            </div>
+                        </button>
+                    </div>
+
+
+
+                </div>
+                <div class="ultimat_right">
+                    <div class="middle_img">
+                        <img class="rot" src="./img/favicon/journal.png" alt="">
+                    </div>
+                    <div class="ultimat_img">
+                        <img src="./img/favicon/happybirth.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="explore">
+        <div class="container">
+            <div class="explore_tit">Explore our products</div>
+            <div class="explore_cards">
+                <div class="explore_card">
+                    <div class="explorer_img">
+                        <img src="./img/favicon/exp1.jpg" alt="">
+                    </div>
+                    <div class="explore_txt">Greeting Cards</div>
+                </div>
+                <div class="explore_card">
+                    <div class="explorer_img">
+                        <img src="./img/favicon/exp2.jpg" alt="">
+                    </div>
+                    <div class="explore_txt">Greeting Cards</div>
+                </div>
+                <div class="explore_card">
+                    <div class="explorer_img">
+                        <img src="./img/favicon/exp3.jpg" alt="">
+                    </div>
+                    <div class="explore_txt">Greeting Cards</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="picture">
+        <div class="container">
+            <div class="middle_img jour">
+                <img class="rot" src="./img/favicon/journal.png" alt="">
+            </div>
+            <div class="picture_top">
+                <div class="picture_tit">Say hi and follow along for updates</div>
+                <div class="picture_tit">@twigspaper</div>
+            </div>
+            <div class="explore_bottom ">
+                <div class="block">
+                    <div class="first_img">
+                        <img src="./img/favicon/paper.jpg" alt="">
+
+                    </div>
+                    <div class="second_img">
+                        <img src="./img/favicon/bee.jpg" alt="">
+                    </div>
+                    <div class="three_img">
+                        <img src="./img/favicon/forest.jpg" alt="">
+                    </div>
+                    <div class="four_img">
+                        <img src="./img/favicon/bird.jpg" alt="">
+                    </div>
+                    <div class="five_img">
+                        <img src="./img/favicon/reduce.jpg" alt="">
+                    </div>
+                    <div class="six_img">
+                        <img src="./img/favicon/arches.jpg" alt="">
+                    </div>
+                    <div class="seven_img">
+                        <img src="./img/favicon/tree.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer_top">
+                    <div class="footer_logo "><img src="./img/favicon/limlog.svg" alt=""></div>
+                    <div class="footer_icons">
+                        <a href="https://www.instagram.com/" class="footer_icon">Instagram</a>
+                        <a href="https://www.facebook.com/?locale=ru_RU" class="footer_icon">Facebook</a>
+                    </div>
+                </div>
+                <div class="footer_cards flex">
+                    <div class="footer_card">
+                        <div class="card_top">Shop</div>
+                        <div class="white"></div>
+                        <div class="card_bottom">
+                            <a href="#" class="card_tittle">Shop All</a>
+                            <a href="#" class="card_tittle">Greeting Cards</a>
+                            <a href="#" class="card_tittle">Assorted Card Sets</a>
+                            <a href="#" class="card_tittle">Notebooks</a>
+                        </div>
+                    </div>
+                    <div class="footer_card">
+                        <div class="card_top">About</div>
+                        <div class="white"></div>
+                        <div class="card_bottom">
+                            <a href="#" class="card_tittle">Our Story</a>
+                            <a href="#" class="card_tittle">Our Values</a>
+                            <a href="#" class="card_tittle">Journal</a>
+                            <a href="#" class="card_tittle">Sustainability</a>
+                        </div>
+                    </div>
+                    <div class="footer_card">
+                        <div class="card_top">Customer Care</div>
+                        <div class="white"></div>
+                        <div class="card_bottom">
+                            <a href="#" class="card_tittle">Contact Us</a>
+                            <a href="#" class="card_tittle">FAQs</a>
+                            <a href="#" class="card_tittle">Returns &amp; Exchanges</a>
+                            <a href="#" class="card_tittle">Support</a>
+                        </div>
+                    </div>
+                    <div class="footer_card">
+                        <div class="card_top">Wholesale</div>
+                        <div class="white"></div>
+                        <div class="card_bottom">
+                            <a href="#" class="card_tittle">Overview</a>
+                            <a href="#" class="card_tittle">Register as a Wholesaler</a>
+                            <a href="#" class="card_tittle">Access the Wholesale Store</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom flex">
+                    <div class="bottom_left">©2021 Twigs Paper. All Rights Reserved.</div>
+                    <div class="bottom_center">
+                        <div class="center_tit">Privacy Policy</div>
+                        <div class="center_tit">Terms &amp; Conditions</div>
+                    </div>
+                    <div class="bottom_right">Built by The Papestielliz</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/core.js"></script>
 
 
