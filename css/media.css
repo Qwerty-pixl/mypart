@@ -89,6 +89,7 @@
 		body.noscroll {
 			overflow: hidden;
 		}
+
 		.usps__grid {
 			flex-direction: column;
 			width: 100%;
@@ -150,7 +151,7 @@
 		justify-content: center;
 	}
 
-	
+
 
 	.obertka {
 		margin-left: 0;
@@ -160,3 +161,7 @@
 		width: 100%;
 	}
 }
+
+
+
+
