@@ -896,6 +896,13 @@ img.rot {
 	text-align: center;
 	background: rgb(249, 233, 224);
 	padding: 15px 132px 19px;
+        transition: 0.5s;
+	cursor: pointer;
+
+}
+
+.explore_txt:hover{
+ background: #E9EDEE;
 }
 
 .explore_cards {
